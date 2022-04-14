@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>자기소개</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="pagestyle.css"/>
+  </head>
+  <body>
+    <header>
+	  <h2><a href="index.html">김눈송의 성장일지</a></h2>
+    </header>
+	
+	<nav>
+	  <ul>
+	    <li class="here">자기소개</li>&#124;
+		<a href="hobby.html"><li>취미</li></a>&#124;
+		<a href="web_basic.html"><li>웹프로그래밍 기초 실습파일</li></a>&#124;
+		<a href="comment.html"><li>방명록</li></a>&#124;
+		<a href="contact.html"><li>연락하기</li></a>
+      </ul>
+	</nav>
+	<br/>
+	
+    <article class="aboutme_article">
+      <strong id="aboutme_title">PROFILE</strong>
+	    <p>이름: 김민지(KIM MINJI)</p>
+	    <p>나이: 20세</p>
+	    <p>학력: 숙명여자대학교 공과대학 IT공학전공</p>
+	  <br/><br/>
+	  <strong id="aboutme_title">EDUCATION</strong>
+	  <br/><br/>
+	    <table border="1" class="timetable">
+	      <tr>
+		    <th>연도</th> <th>학교명</th> <th>전공</th>
+		  </tr>
+		  <tr>
+		    <td>2007 - 2013</td> <td>삼일초등학교</td> <td></td>
+		  </tr>
+		  <tr>
+		    <td>2013 - 2016</td> <td>동작중학교</td> <td></td>
+		  </tr>
+		  <tr>
+		    <td>2016 - 2019</td> <td>동덕여자고등학교</td> <td></td>
+		  </tr>
+		  <tr>
+		    <td>2019 -</td> <td>숙명여자대학교</td> <td>IT공학전공</td>
+		  </tr>
+	    </table>
+	  <br/><br/><br/>
+	  <strong id="aboutme_title">ACTIVITY & AWARDS</strong> 
+      <br/><br/>	  
+	    <table border="1" class="table">
+	      <tr>
+		    <th>시기</th> <th>활동명</th>
+		  </tr>
+	      <tr>
+		    <td>2014.05 -</td> <td>네이버 블로그 운영</td>
+		  </tr>
+		  <tr>
+		    <td>2019.03 - 2020.02</td> <td>인액터스 숙명 14기 홍보부 팀장</td>
+		  </tr>
+		  <tr>
+		    <td>2019.09</td> <td>2019-1학기 성적우수장학금</td>
+		  </tr>
+		  <tr>
+		    <td>2014.11</td> <td>교내 Citizenship Fair 장려상</td>
+		  </tr>
+		  <tr>
+		    <td>2020.03 -</td> <td>IT공학전공 학회(웹운영팀 WIN)</td>
+		  </tr>
+		  <tr>
+		    <td>2020.03 -</td> <td>리더십그룹 비트윈 16기</td>
+		  </tr>
+	    </table>
+	  <br/><br/><br/>
+	  <strong id="aboutme_title">PERSONALITY</strong>
+	    <ul>
+	      <li>Holland 직업적성검사: C(관습형), I(탐구형)</li>
+		  <li>MBTI: ISFJ 유형</li>
+	    </ul>
+	  <br/><br/>
+	  <strong id="aboutme_title">VISION</strong>
+	  <br/><br/>
+	    <strong>되고 싶은 내 모습</strong>
+	    <ul>
+	      <li>끊임없이 도전하는 사람</li>
+		  <li>타인에게 선한 영향력을 끼치는 사람</li>
+		  <li>성실함과 인성을 갖춘 사람</li>
+		  <li>스스로를 사랑하고 자존감이 높은 사람</li>
+	    </ul>
+		<br/>
+	    <strong>장기 목표</strong>
+	    <ul>
+	      <li>전공 공부를 열심히 하여 매학기 학점 3.5 이상 얻기</li>
+		  <li>관심 있는 활동이라면 주저하지 않고 지원하기</li>
+		  <li>글 쓰고 말하는 실력 키우기 - 한 달에 2권 독서, 발표 동아리 들어가기, 매일 뉴스 보기</li>
+	    </ul>
+		<br/>
+        <strong>단기 목표</strong>
+	    <ul>
+	      <li>(코로나 사태 진정되면) 운전면허 도로주행 합격</li>
+		  <li>전공 관련 대외활동 지원</li>
+		  <li>프로그래머스 Java 입문 완강</li>
+		  <li>한국사 자격증, 토플 자격증 취득 (연말까지)</li>
+		  <li>교환학생 제도 알아보기</li>
+		  <li>유튜브로 포토샵, 프리미어 프로 독학</li>
+	    </ul>
+	  <br/><br/>
+      <strong id="aboutme_title">TIMETABLE</strong>
+	  <br/>
+	    <p>버튼을 클릭하여 시간표를 확인하세요.</p>
+        <input type="button" value="1학기(2019-1)" onclick="timetable1();">
+        <input type="button" value="2학기(2019-2)" onclick="timetable2();">
+        <input type="button" value="3학기(2020-1)" onclick="timetable3();"><br/><br/>
+		<div id="area"></div>
+	    <script type="text/javascript">
+		  function timetable1() {
+			document.getElementById("area").innerHTML = "<table border='1' class='timetable'><caption>1학기(2019-1)</caption><tr><th></th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th></tr><tr><td rowspan='2'>11시</td> <td rowspan='4' class='it'>융합적사고와글쓰기</td> <td rowspan='2'></td> <td rowspan='4' class='it' style='background:#C3EFFE'>세계시민교육과리더십</td> <td rowspan='2'></td> <td rowspan='2'></td></tr><tr></tr><tr><td rowspan='2'>12시</td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td></tr><tr></tr><tr><td rowspan='2'>13시</td> <td></td> <td></td> <td></td> <td></td> <td rowspan='8' style='background:#B8FFE0'>진로탐색과역량개발</td></tr><tr><td rowspan='3' style='background:#C3E0FE'>일본대중문화기행</td> <td rowspan='3' class='france'>경제학개론</td> <td rowspan='3' style='background:#C3E0FE'>일본대중문화기행</td> <td rowspan='3' class='france'>경제학개론</td></tr><tr><td rowspan='2'>14시</td></tr><tr></tr><tr><td rowspan='2'>15시</td> <td rowspan='6' style='background:#A7C6E8'>일본학커리어설계</td> <td rowspan='4' class='arc'>영어쓰기와읽기</td> <td rowspan='2'></td> <td rowspan='2'></td></tr><tr></tr><tr><td rowspan='2'>16시</td> <td></td> <td rowspan='2'></td><tr><td rowspan='5' class='web'>웹프로그래밍첫걸음</td></tr><tr> <td rowspan='2'>17시</td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td></tr><tr></tr><tr><td rowspan='2'>18시</td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td></tr><tr></tr></table>";
+		  }
+		  function timetable2() {
+		    document.getElementById("area").innerHTML = "<table border='1' class='timetable'><caption>2학기(2019-2)</caption><tr><th></th> <th>월</th> <th>화</th> <th>수</th> <th>목</th> <th>금</th></tr><tr><td rowspan='2'>10시</td> <td></td> <td></td> <td></td> <td></td> <td rowspan='2'></td></tr><tr><td rowspan='3' class='it'>기초프로그래밍</td> <td rowspan='3' class='debate'>통계학입문</td> <td rowspan='3' class='it'>기초프로그래밍</td> <td rowspan='3' class='debate'>통계학입문</td></tr><tr><td rowspan='2'>11시</td> <td rowspan='2'></td></tr><tr></tr><tr><td rowspan='2'>12시</td> <td rowspan='3' class='data'>사랑과헌법</td> <td rowspan='3' style='background:#A7C6E8'>동화와꿈의세계</td> <td rowspan='3' class='data'>사랑과헌법</td> <td rowspan='3' style='background:#A7C6E8'>동화와꿈의세계</td> <td rowspan='2'></td></tr><tr></tr><tr><td rowspan='2'>13시</td> <td rowspan='2'></td></tr><tr><td></td> <td></td> <td></td> <td></td></tr><tr><td rowspan='2'>14시</td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td></tr><tr></tr><tr><td rowspan='2'>15시</td> <td rowspan='3' class='france'>초연결사회와개인정보보호</td> <td rowspan='2'></td> <td rowspan='3' class='france'>초연결사회와개인정보보호</td> <td rowspan='4'  class='web'>비판적사고와토론</td> <td rowspan='2'></td></tr><tr></tr><tr><td rowspan='2'>16시</td> <td rowspan='2'></td> <td rowspan='2'></td></tr><tr><td></td> <td rowspan='4' class='arc'>진로탐색교수멘토링</td></tr><tr><td rowspan='2'>17시</td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td></tr><tr></tr><tr><td rowspan='2'>18시</td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td> <td rowspan='2'></td></tr><tr><td></td></tr></table>";
+		  }
+		  function timetable3() {
+		    document.getElementById("area").innerHTML = "<table border='1' class='timetable'> <caption>3학기(2020-1)</caption> <tr><th></th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr> <tr><td rowspan='2'>10시</td><td></td><td rowspan='2'></td><td></td><td rowspan='2'></td><td rowspan='2'></td></tr> <tr><td rowspan='3' class='it'>IT기술의 이해</td><td rowspan='3' class='it'>IT기술의 이해</td></tr> <tr><td rowspan='2'>11시</td><td rowspan='4' class='debate'>비판적사고와토론</td><td rowspan='2'></td><td rowspan='2'></td></tr> <tr></tr> <tr><td rowspan='2'>12시</td> <td rowspan='3' class='data'>데이터구조</td><td rowspan='3' class='data'>데이터구조</td><td rowspan='2'></td><td rowspan='2'></td></tr> <tr></tr> <tr><td rowspan='2'>13시</td> <td></td><td></td><td rowspan='2'></td></tr> <tr><td rowspan='3' class='web'>웹프로그래밍 기초</td><td rowspan='3' class='france'>프랑스문화권연구</td><td rowspan='3' class='web'>웹프로그래밍 기초</td><td rowspan='3' class='france'>프랑스문화권연구</td></tr> <tr><td rowspan='2'>14시</td> <td rowspan='2'></td></tr> <tr></tr> <tr><td rowspan='2'>15시</td><td rowspan='2'></td><td rowspan='3' class='arc'>IT기기구조</td><td rowspan='2'></td><td rowspan='3' class='arc'>IT기기구조</td><td rowspan='2'></td></tr> <tr></tr> <tr><td rowspan='2'>16시</td><td rowspan='2'></td><td rowspan='2'></td><td rowspan='2'></td></tr> <tr><td></td><td></td></tr> </table>";
+		  }
+		</script>
+	</article>
+	<br/>
+
+    <footer>&copy 1914386 김민지</footer>
+	
+  </body>
+</html>

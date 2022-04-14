@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>방명록</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="pagestyle.css"/>
+  </head>
+  <body>
+    <header>
+	  <h2><a href="index.html">김눈송의 성장일지</a></h2>
+    </header>
+	
+	<nav>
+	  <ul>
+	    <a href="aboutme.html"><li>자기소개</li></a>&#124;
+		<a href="hobby.html"><li>취미</li></a>&#124;
+		<a href="web_basic.html"><li>웹프로그래밍 기초 실습파일</li></a>&#124;
+		<li class="here">방명록</li>&#124;
+		<a href="contact.html"><li>연락하기</li></a>
+      </ul>
+	</nav>
+	
+    <article class="aboutme_article">
+	  <h3 align="center">방명록</h3>
+	  <p align="center">버튼을 눌러 방명록을 남겨주세요.<br/>작성하신 방명록은 하단에서 확인할 수 있어요.</p>
+	  <input type="button" value="방명록 남기기" onclick="printText();"/>
+	  <hr/>
+	  <h4>방명록 이력</h4>
+	  <div id="area"></div>
+	  <script type="text/javascript">
+		var today = new Date();
+	    var year = today.getFullYear();
+	    var month = today.getMonth() + 1;
+	    var date = today.getDate();
+	    var hour = today.getHours();
+	    var minute = today.getMinutes();
+	    var second = today.getSeconds();
+		
+		var dom = document.getElementById("area");
+	  
+	    function printText(){
+	      var w = prompt('말씀을 남겨주세요');
+		  dom.innerHTML = dom.innerHTML + "<p>" + w + " - " + year + ". " + month + ". " + date + ". " + hour + ":" + minute + ":" + second + "</p>";
+	    }
+
+	  </script>
+	  <br/><br/>
+	</article>
+	
+    <footer>&copy 1914386 김민지</footer>
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>눈꽃 상담소 메인화면</title>
+  <style type="text/css">
+    @import url('//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+    body {font-family:'Iropke Batang';  background:#FCF8EC;}
+    h1 {color:#0d2d84;font-weight:bold;}
+    h2 {font-size:20pt;}
+	figcaption {text-align:center;}
+	#logo {float:left;}
+  </style>
+</head>
+<body>
+  <img src="logo.gif" id="logo" width="100px">
+  <br><br>
+  <h3 align="left">눈꽃 상담소</h3>
+  <br><br>
+  <h1 align="center">눈꽃 상담소에 오신 것을 환영합니다</h1>
+  <hr>
+  <img src="mainimg.jpg" width="100%">
+  <h2 align="center">무엇을 도와드릴까요?</h2>
+  <table>
+    <tr>
+      <td>
+        <figure>
+          <a href="1introduction.html"><img src="menu1.png" width="150px">
+          <figcaption>홈페이지 소개</figcaption></a>
+        </figure>
+      </td>
+      <td>
+        <figure>
+          <a href="2mbti.html"><img src="menu2.png" width="150px">
+          <figcaption>MBTI 검사</figcaption></a>
+        </figure>
+      </td>
+      <td>
+        <figure>
+          <a href="3result.html"><img src="menu3.png" width="150px">
+          <figcaption>MBTI 결과 해석  </figcaption></a>
+        </figure>
+      </td>
+      <td>
+        <figure>
+          <a href="4career.html"><img src="menu4.png" width="150px">
+          <figcaption>진로 탐색</figcaption></a>
+        </figure>
+      </td>
+      <td>
+        <figure>
+          <a href="5consulting.html"><img src="menu5.png" width="150px">
+          <figcaption>개인 상담 신청</figcaption></a>
+        </figure>
+      </td>
+    </tr>
+  </table>
+  <br>
+  <hr>
+  <script>
+    var today = new Date();
+	var year = today.getFullYear();
+	var month = today.getMonth()+1;
+	var day = today.getDate();
+	var week = new Array("일","월","화","수","목","금","토");
+	var hour = today.getHours();
+	var minute = today.getMinutes();
+	document.write(year+"년 "+month+"월 "+day+"일 "+week[today.getDay()]+"요일 "+hour+"시 "+minute+"분");
+  </script>
+</body>
+</html>

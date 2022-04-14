@@ -1,0 +1,12 @@
+import java.io.IOException;
+
+public class SimpleRead {
+
+	public static void main(String[] args) {
+		int b = 0;
+		int count = 0;
+		
+		try {
+			b = System.in.read();
+			while(b != '
+Total Byte: 189

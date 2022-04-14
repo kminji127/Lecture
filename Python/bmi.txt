@@ -1,0 +1,6 @@
+ÀÌ¸§   ³ªÀÌ   Å°  ¸ö¹«°Ô  bmi   ÆÇÁ¤
+±è¼÷¸í   20   150   50   <function bmi at 0x01BE82B0>   <function result at 0x01BE8220>
+¿À¼÷¸í   24   162   54   <function bmi at 0x01BE82B0>   <function result at 0x01BE8220>
+¹Ú¼÷¸í   22   160   60   <function bmi at 0x01BE82B0>   <function result at 0x01BE8220>
+±è´«¼Û   19   155   44   <function bmi at 0x01BE82B0>   <function result at 0x01BE8220>
+ÀÌ´«¼Û   20   161   51   <function bmi at 0x01BE82B0>   <function result at 0x01BE8220>

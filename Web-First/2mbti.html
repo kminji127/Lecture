@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MBTI 검사</title>
+  <style type="text/css">
+    @import url('//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+    body {font-family:'Iropke Batang';  background:#FCF8EC;}
+    span {margin-left:10%;; padding:5px; background:white; border:medium solid black;}
+	#logo {float:left;}
+  </style>
+</head>
+<body>
+  <img src="logo.gif" id="logo" width="100px">
+  <br><br>
+  <h3><a href="index.html">눈꽃 상담소</a></h3>
+  <br><br>
+  <span><a href="1introduction.html">홈페이지 소개</a></span>
+  <span style="background:#0d2d84; color:white;">MBTI 검사</span>
+  <span><a href="3result.html">MBTI 결과 해석</a></span>
+  <span><a href="4career.html">진로 탐색</a></span>
+  <span><a href="5consulting.html">개인 상담 신청</a></span>
+  <br><br><hr>
+  <h3 align="center">MBTI 검사</h3>
+  <p align="center">이미지를 클릭하여 팝업창에서 MBTI 검사를 진행해주세요. 검사를 완료하셨다면 'MBTI 결과 해석' 메뉴를 클릭하세요.</p>
+  <img onClick="showPage()" src="intro.jpg" width=100%>
+  <script>
+    function showPage() {
+		var url=("https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC");
+		window.open(url,"","width=1000,height=700");
+	}
+  </script>
+  <br><hr>
+  <p align="center">Copyright&copy;눈꽃 상담소(http://etoile127.dothome.co.kr)</p>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>연락하기</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="pagestyle.css"/>
+  </head>
+  <body>
+    <header>
+	  <h2><a href="index.html">김눈송의 성장일지</a></h2>
+    </header>
+	
+	<nav>
+	  <ul>
+	    <a href="aboutme.html"><li>자기소개</li></a>&#124;
+		<a href="hobby.html"><li>취미</li></a>&#124;
+		<a href="web_basic.html"><li>웹프로그래밍 기초 실습파일</li></a>&#124;
+		<a href="comment.html"><li>방명록</li></a>&#124;
+		<li class="here">연락하기</li>
+      </ul>
+	</nav>
+	
+    <article class="aboutme_article">
+	  <h3 align="center">용건을 알려주세요!</h3>
+	  <p align="center">인적사항, 용건, 답장 희망 시간을 적어주세요.</p>
+	  <form action="contact_result.php" method="GET">
+	  <fieldset>
+	    <legend>누군지 알고 싶어요</legend>
+		<p>이름 : <input type="text" name="name"></p>
+	    <p>전화번호 : <input type="tel" name="tel" placeholder="-를 제외하고 적어주세요" pattern="[0-9]{3}[0-9]{3,4}[0-9]{4}"></p>
+		<p>이메일 : <input type="email" name="email"></p>
+        <p>나이 : 
+		<select name="age" size="1">
+	      <option value="19_below">19세 이하</option>
+		  <option value="20">20세</option>
+		  <option value="21">21세</option>
+		  <option value="22">22세</option>
+		  <option value="23">23세</option>
+		  <option value="24">24세</option>
+		  <option value="25_above">25세 이상</option>
+	    </select></p>
+	  </fieldset>
+	  <br/>
+	  <fieldset>
+	    <legend>용건을 말해주세요</legend>
+		<textarea name="opinion" cols="65" rows="10">내용을 적어주세요.</textarea><br/>
+	  </fieldset>
+	  <br/>
+	  <fieldset>
+	    <legend>언제까지 답변 드리면 될까요</legend>
+		<p>날짜: <input type="date" name="date" min="2020-05-18"></p>
+		<p>시간: <input type="time" name="time"></p>
+	  </fieldset>
+	  <br/>
+	  <input type="submit" value="보내기"/>
+	  <input type="reset" value="다시 입력하기"/>
+	  </form>
+	  <br/><br/>
+	  <hr/>
+	  <br/>
+	  <h3 align="center">저의 연락처입니다!</h3>
+	  <p align="center">아래의 연락처로 연락 주시면 더 빠르게 답장할 수 있어요.</p>
+	  <br>
+	  <table>
+	    <tr>
+		  <td><img src="https://image.flaticon.com/icons/png/512/126/126516.png" width="50px"></td>
+		  <td width="10px">
+		  <td>etoile2019@sookmyung.ac.kr</td>
+		</tr>
+		<tr height="10px">
+		</tr>
+		<tr>
+		  <td><img src="https://image.flaticon.com/icons/png/512/126/126509.png" width="50px"></td>
+		  <td width="10px">
+		  <td>010-2020-0518</td>
+		</tr>
+		<tr height="10px">
+		</tr>
+		<tr>
+		  <td><img src="https://image.flaticon.com/icons/svg/1384/1384031.svg" width="50px"></td>
+		  <td width="10px">
+		  <td>@webp200518</td>
+		</tr>
+	  <table>
+	  <br><br>
+	  <hr/>
+	  <br/>
+	  <h3 align="center">나가시기 전에</h3>
+	  <p align="center">홈페이지를 이용하신 소감이 어떤지 설문을 준비했습니다. 1분만 시간을 내어 설문에 참여하시면 홈페이지 개선에 큰 도움이 될 것입니다.</p>
+	  <form action="survey_result.php" method="GET">
+	  <fieldset>
+	    <legend>설문조사</legend> 
+		<strong>전혀 아니다-1점 약간 아니다-2점 보통이다-3점 약간 그렇다-4점 매우 그렇다-5점</strong>
+		<p>본 홈페이지의 접근성은 편리했다 : 1 <input type="range" name="q1" min="1" max="5" value="time"> 5</p>
+		<p>본 홈페이지의 글 배치 및 디자인은 괜찮았다 : 1 <input type="range" name="q2" min="1" max="5" value="time"> 5</p>
+		<p>본 홈페이지를 통해 작성자의 취미 생활을 알 수 있었다 : 1 <input type="range" name="q3" min="1" max="5" value="time"> 5</p><br/>
+		<p>디자인/내용을 고려했을 때 어떤 메뉴가 가장 좋았나요?(중복 선택 가능)</p>
+		<input type="checkbox" name="menu[]" value="aboutme"> 자기소개
+	    <input type="checkbox" name="menu[]" value="hobby"> 취미
+	    <input type="checkbox" name="menu[]" value="web_basic"> 웹프로그래밍 기초 실습파일
+	    <input type="checkbox" name="menu[]" value="survey"> 설문조사
+	    <input type="checkbox" name="menu[]" value="contact"> 연락하기
+	  </fieldset><br/>
+	  개선사항<br/><textarea name="opinion" cols="75" rows="5">개선할 점을 적어주세요.</textarea><br/>
+	  <br/>
+	  <input type="submit" value="제출"/>
+	  <input type="reset" value="초기화"/>
+	</form>
+	<br/><br/>
+	</article>
+
+    <footer>&copy 1914386 김민지</footer>
+	
+  </body>
+</html>
