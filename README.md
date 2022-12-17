@@ -12,3 +12,4 @@
 | 2021-2        | 운영체제                               | [개념 정리](https://smjan27.gitbook.io/snowiki/operating-system) |
 |               | 서버 운영 및 보안 `Linux`              | [개념 정리](https://smjan27.gitbook.io/snowiki/linux) |
 |               | 통계프로그래밍 `R`                     | [소스코드](/R)               |
+| 2022-2        | 네트워크                               | [소스코드](https://github.com/kminji127/22-2_Network) / [개념 정리](https://smjan27.gitbook.io/snowiki/network) |
